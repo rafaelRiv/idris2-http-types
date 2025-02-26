@@ -16,8 +16,7 @@ authors = "rafaelRiv"
 -- depends =
 
 -- modules to install
-modules = Idris2_http_types
-
+modules = Network.HTTP.Types, Network.HTTP.Types.Version
 -- main file (i.e. file to load at REPL)
 -- main =
 
