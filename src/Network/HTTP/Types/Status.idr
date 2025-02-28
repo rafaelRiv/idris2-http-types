@@ -1,5 +1,7 @@
 module Network.HTTP.Types.Status
 
+import Control.Data.Enum
+
 -- | HTTP Status.
 --
 -- Only the 'statusCode' is used for comparisons.
@@ -13,10 +15,6 @@ record Status where
   constructor MkStatus
   statusCode : Int
   statusMessage : String
-
-interface Enum a where
-  fromEnum : Int -> a
-  toEnum : a -> Int
 
 Enum Status where
   toEnum = statusCode 
