@@ -14,6 +14,14 @@ record Status where
   statusCode : Int
   statusMessage : String
 
+interface Enum a where
+  fromEnum : Int -> a
+  toEnum : a -> Int
+
+Enum Status where
+  toEnum = statusCode 
+  fromEnum c = MkStatus c ""
+
 {-
 Enum Status where
     fromEnum = statusCode
