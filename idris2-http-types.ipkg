@@ -16,7 +16,7 @@ authors = "rafaelRiv"
 -- depends =
 
 -- modules to install
-modules = Network.HTTP.Types, Network.HTTP.Types.Version
+modules = Network.HTTP.Types, Network.HTTP.Types.Version,Network.HTTP.Types.Status, Network.HTTP.Types.Header
 -- main file (i.e. file to load at REPL)
 -- main =
 
