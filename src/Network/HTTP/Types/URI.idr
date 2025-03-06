@@ -17,14 +17,16 @@ module Network.HTTP.Types.URI
 --
 -- The second part should be 'Nothing' if there was no key-value
 -- separator after the query item name.
---
+public export
 QueryItem : Type
 QueryItem = (String, Maybe String)
 
 -- | A sequence of 'QueryItem's.
-Query : List Type
-Query = [QueryItem]
+public export
+Query : Type
+Query = List QueryItem
 
 -- | Like Query, but with 'Text' instead of 'B.ByteString' (UTF8-encoded).
-QueryText : List (Type,Type)
-QueryText = [(String, Maybe String)]
+public export
+QueryText : Type
+QueryText = List (String, Maybe String)
