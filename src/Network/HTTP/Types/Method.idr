@@ -23,6 +23,7 @@ data StdMethod
     | OPTIONS
     | PATCH
 
+public export
 Show StdMethod where
   show GET ="GET"
   show POST = "POST"
@@ -35,40 +36,47 @@ Show StdMethod where
   show PATCH = "PATCH"
 
 -- | HTTP GET Method
+public export
 methodGet : Method
 methodGet = show GET
 
 -- | HTTP POST Method
+public export
 methodPost : Method
 methodPost = show POST
 
 -- | HTTP HEAD Method
+public export
 methodHead : Method
 methodHead = show HEAD
 
 -- | HTTP PUT Method
+public export
 methodPut : Method
 methodPut = show PUT
 
 -- | HTTP DELETE Method
+public export
 methodDelete : Method
 methodDelete = show DELETE
 
 -- | HTTP TRACE Method
+public export
 methodTrace : Method
 methodTrace = show TRACE
 
 -- | HTTP CONNECT Method
+public export
 methodConnect : Method
 methodConnect = show CONNECT
 
 -- | HTTP OPTIONS Method
+public export
 methodOptions : Method
 methodOptions = show OPTIONS
 
 -- | HTTP PATCH Method
---
--- @since 0.8.0
+public export
 methodPatch : Method
 methodPatch = show PATCH 
 

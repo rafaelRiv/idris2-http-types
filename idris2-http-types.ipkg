@@ -3,8 +3,10 @@ version = 0.1.0
 authors = "Rafael Prévost-Rivero"
 modules = 
 	Network.HTTP.Types,
-	Network.HTTP.Types.Version,
-	Network.HTTP.Types.Status,
 	Network.HTTP.Types.Header,
-	Network.HTTP.Types.Method
+	Network.HTTP.Types.Method,
+	Network.HTTP.Types.QueryLike,
+	Network.HTTP.Types.Status,
+	Network.HTTP.Types.URI,
+	Network.HTTP.Types.Version
 sourcedir = "src"
