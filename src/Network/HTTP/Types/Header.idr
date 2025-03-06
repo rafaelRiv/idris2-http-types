@@ -14,15 +14,15 @@ HeaderName = String
 --
 -- E.g. @\"Content-Length: 28\"@ parsed into a 'Header' would turn into @("Content-Length", "28")@
 public export
-Header : (Type,Type)
+Header : Type
 Header = (HeaderName, String)
 
 -- | A list of 'Header's.
 --
 -- Same type as 'ResponseHeaders', but useful to differentiate in type signatures.
 public export
-RequestHeaders : List (Type,Type)
-RequestHeaders = [Header]
+RequestHeaders : Type
+RequestHeaders = List Header
 
 -- | [Accept](https://www.rfc-editor.org/rfc/rfc9110.html#name-accept)
 public export
