@@ -3,6 +3,7 @@
 -- At the bottom are also some functions to handle certain header field values.
 module Network.HTTP.Types.Header
 
+import Data.ByteString
 -- | A case-insensitive name of a header field.
 --
 -- This is the part of the header field before the colon: @HeaderName: some value@
