@@ -24,6 +24,13 @@ public export
 RequestHeaders : Type
 RequestHeaders = List Header
 
+-- | A list of 'Header's.
+--
+-- Same type as 'RequestHeaders', but useful to differentiate in type signatures.
+public export
+ResponseHeaders : Type
+ResponseHeaders = List Header
+
 -- | [Accept](https://www.rfc-editor.org/rfc/rfc9110.html#name-accept)
 public export
 hAccept : HeaderName
