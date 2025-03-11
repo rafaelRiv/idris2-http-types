@@ -2,6 +2,7 @@ package idris2-http-types
 version = 0.1.0
 authors = "Rafael Prévost-Rivero"
 modules = 
+	Control.Data.Enum,
 	Network.HTTP.Types,
 	Network.HTTP.Types.Header,
 	Network.HTTP.Types.Method,
